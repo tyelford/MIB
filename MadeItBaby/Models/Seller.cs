@@ -29,5 +29,6 @@ namespace MadeItBaby.Models {
         public string EmailAddress { get; set; }
         public string Location { get; set; }
         public virtual List<Category> Categories { get; set; }
+        public virtual List<Review> Reviews{ get; set; }
     }
 }
