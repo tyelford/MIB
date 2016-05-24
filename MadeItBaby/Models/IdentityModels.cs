@@ -29,5 +29,7 @@ namespace MadeItBaby.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<MadeItBaby.Models.Seller> Sellers { get; set; }
     }
 }

@@ -1,0 +1,162 @@
+﻿@model MadeItBaby.Models.Seller
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Seller</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StoreName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoreName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Slogan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Slogan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfilePicture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProfilePicture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FeaturePic1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FeaturePic1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FreaturePic1Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FreaturePic1Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FeaturePic2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FeaturePic2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FeaturePic2Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FeaturePic2Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FeaturePic3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FeaturePic3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FeaturedPic3Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FeaturedPic3Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HasEtsyStore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HasEtsyStore)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EtsyLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EtsyLink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HasFBPage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HasFBPage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FBLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FBLink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HasWebPage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HasWebPage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WebLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WebLink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SellerID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
