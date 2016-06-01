@@ -1,0 +1,315 @@
+﻿body {
+    font-size:16px;
+}
+
+
+
+/**Background Image**/
+#yarnHeader{
+    position:absolute;
+    top:0;
+    left:0;
+}
+#yarnHeader img{
+    width: 100%;
+
+}
+
+/**HEADER**/
+#headerContainer{
+    padding-bottom: 30px;
+}
+
+nav#header-nav{
+    background: url(../images/Production/yarnImage.gif) no-repeat;
+    padding-right: 30px;
+}
+
+nav#header-nav a{
+    color:white;
+    text-shadow: 1px 1px black;
+}
+
+nav#header-nav a span.glyphicon{
+    color:white;
+    font-size: 1.4em;
+    margin-left:10px;
+}
+
+nav#header-nav a:hover{
+    text-decoration:none;
+}
+
+nav#header-nav span#subBrand{
+    color: #fdaaa1;
+    text-decoration:none;
+    text-shadow: 1px 1px black;
+    padding-left: 1px;
+}
+
+nav#header-nav span:hover{
+    color: #fdaaa1;
+    text-shadow: 1px 1px black;
+}
+
+#header-nav{
+    background-color: white;
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img {
+    background: url('../images/Production/3HandsLogo-lg.png') no-repeat;
+    width: 150px;
+    height: 163px;
+    margin: 10px 15px 10px 0;
+}
+
+
+header section{
+    margin-top: 50px;
+}
+
+
+.navbar-brand h1, .navbar-brand span{
+    margin-left: 14px;
+}
+
+.navbar-brand h1{
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 3em;
+    margin-bottom: -5px;
+    margin-left: 13px;
+}
+
+header label{
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+
+#masterBottomBar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    margin-top: -20px;
+}
+#masterFooterBar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+
+#searchButton{
+    margin-top: 15px;
+}
+
+/**MAIN CONTENT GLOBAL STYLES**/
+#main-content{
+    margin-bottom: 100px;
+}
+
+/**Feature boxes*/
+
+.featureBox{
+    position: relative;
+    width: 100%;
+    border: thin solid #AAA;
+    box-shadow: 2px 2px 0 0 #EEE;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.featureBoxHeader{
+    height: 100px;
+}
+
+.featuredAvatar{
+    float: left;
+    margin: 4px 
+}
+.featureBoxHeader h3{
+    float: left;
+}
+.featureBoxDivider{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.featuredImages{
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.featuredImages h4{
+    text-align: center;
+    margin-bottom: 0;
+}
+.featuredImghelper{
+    display: inline-block;
+    height: 100%;
+    vertical-align:middle;
+}
+.featuredImages img{
+    vertical-align: middle;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 10px;
+}
+
+.featuredLinks{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+.featuredLinks h4{
+    text-align: center;
+}
+/*
+.featuredEtsy, .featuredFacebook, .featuredWeb{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+}
+.featuredWeb{
+    margin-right: 0;
+}
+.featuredText p{
+    margin: 5px;
+}
+    */
+
+/**FOOTER**/
+footer{
+    background-color: #fdaaa1;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+footer h2, footer p{
+    text-shadow: 1px 1px #EEE;
+}
+
+footer p{
+    margin-top: -10px;
+    margin-left: 1px;
+}
+
+#copyright{
+    font-size: 0.8em;
+    color: grey;
+    text-align: center;
+}
+
+
+
+/**PROFILE PAGE**/
+
+#profile-brand{
+    margin-top: 15px;
+}
+
+#profile-pic{
+    margin-right: 20px;
+}
+
+#profile-pic img{
+    vertical-align: middle;
+}
+
+#profile-stores-heading{
+    clear: both;
+    margin-top: 60px;
+}
+
+.profileFeaturedProduct{
+    margin-top: 10px;
+    text-align:center;
+}
+.profileFeaturedProductBox{
+    border: thin solid black;
+}
+.featuredProfileImghelper{
+    display: inline-block;
+    height: 100%;
+    vertical-align:bottom;
+}
+.profileFeaturedImage{
+    height: 110px;
+    vertical-align: bottom;
+}
+.profileFeaturedImage img{
+    border-radius: 20px;
+}
+
+
+/**LARGE DEVICES ONLY**/
+@media(min-width: 1200px){
+
+}
+
+/**MEDIUM DEVICES ONLY**/
+@media(min-width:992px) and (max-width: 1199px){
+
+}
+
+/**SMALL DEVICES ONLY**/
+@media(min-width:768px) and (max-width: 991px){
+    
+}
+
+/**EXTRA SMALL DEVICES ONLY**/
+@media(max-width: 767px){
+
+    /**HEADER**/
+    nav#header-nav{
+        padding-right:0px;
+    }
+    .navbar-brand{
+        padding-top: 10px;
+        height: 67px;
+    }
+
+    .navbar-brand h1{
+        font-size: 6vw;
+    }
+    .navbar-brand p{
+        margin-top: 5px;
+    }
+
+    #collapsable-nav{
+        position: relative;
+        top: 40px;
+        background-color: #fdaaa1;
+    }
+    #collapsable-nav a{
+        font-size: 1.2em;
+        text-align:center;
+    }
+    #collapsable-nav a:hover, #collapsable-nav a:active{
+        background-color: #AAA;
+    }
+    #collapsable-nav a span{
+        margin-right: 5px;
+        padding-top: 0px;
+    }
+
+    /**MAIN CONTENT GLOBAL**/
+    #main-content{
+        margin-bottom: 30px;
+    }
+
+    footer{
+        padding-bottom: 20px;
+    }
+
+    /**PROFILE**/
+    
+}
+
+
+
