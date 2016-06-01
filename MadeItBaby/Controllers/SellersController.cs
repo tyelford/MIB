@@ -10,6 +10,7 @@ using MadeItBaby.Models;
 
 namespace MadeItBaby.Controllers
 {
+    [RoutePrefix("Sellers")]
     public class SellersController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -21,6 +22,7 @@ namespace MadeItBaby.Controllers
         }
 
         // GET: Sellers/Details/5
+        //[Route("{StoreName}")]
         public ActionResult Details(int? id)
         {
             if (id == null)

@@ -28,11 +28,11 @@ namespace MadeItBaby.Models {
         public string Slogan { get; set; }
         public string ProfilePicture { get; set; }
         public string FeaturePic1 { get; set; }
-        public string FreaturePic1Description { get; set; }
+        public string FeaturePic1Description { get; set; }
         public string FeaturePic2 { get; set; }
         public string FeaturePic2Description { get; set; }
         public string FeaturePic3 { get; set; }
-        public string FeaturedPic3Description { get; set; }
+        public string FeaturePic3Description { get; set; }
         public bool HasEtsyStore { get; set; }
         public string EtsyLink { get; set; }
         public bool HasFBPage { get; set; }
@@ -42,5 +42,6 @@ namespace MadeItBaby.Models {
         public string PhoneNumber { get; set; }
         public virtual List<Category> Categories { get; set; }
         public virtual List<Review> Reviews{ get; set; }
+
     }
 }

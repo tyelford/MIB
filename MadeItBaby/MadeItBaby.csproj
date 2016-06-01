@@ -165,6 +165,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605241014452_InitialCreate.cs" />
+    <Compile Include="Migrations\201605241014452_InitialCreate.Designer.cs">
+      <DependentUpon>201605241014452_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606010653035_UpdateSeller.cs" />
+    <Compile Include="Migrations\201606010653035_UpdateSeller.Designer.cs">
+      <DependentUpon>201606010653035_UpdateSeller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606010715140_seedmethod.cs" />
+    <Compile Include="Migrations\201606010715140_seedmethod.Designer.cs">
+      <DependentUpon>201606010715140_seedmethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -239,6 +252,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="images\fp1\" />
+    <Folder Include="images\fp2\" />
+    <Folder Include="images\fp3\" />
+    <Folder Include="images\profilePics\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -246,6 +263,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201605241014452_InitialCreate.resx">
+      <DependentUpon>201605241014452_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606010653035_UpdateSeller.resx">
+      <DependentUpon>201606010653035_UpdateSeller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606010715140_seedmethod.resx">
+      <DependentUpon>201606010715140_seedmethod.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
