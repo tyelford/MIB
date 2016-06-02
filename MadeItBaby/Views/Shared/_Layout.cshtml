@@ -3,39 +3,126 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title | Made it Baby</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container" id="headerContainer">
+                <div class="navbar-header" id="navheader">
+                    <div class="navbar-brand">
+                        <a href="index.aspx">
+                            <h1>Made It Baby</h1>
+                        </a>
+                        <p>
+                            <span id="subBrand">Handmade Directory</span>
+                        </p>
+                    </div>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-user"></span><br class="hidden-xs" /> Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-off"></span><br class="hidden-xs" /> Sign Up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <section id="searchSection">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-xs-6">
+                                <label>Location:</label>
+                                @*<asp:TextBox ID="locationSearchT" runat="server" CssClass="form-control"></asp:TextBox>*@
+                                <input type="text" id="locationSearchT" class="form-control" />
+                            </div>
+
+                            <div class="col-xs-6">
+                                <label>Category:</label>
+                                @*<asp:DropDownList ID="categorySearchT" runat="server" CssClass="form-control"></asp:DropDownList>*@
+                                <input type="text" id="categorySearchT" class="form-control" />
+                            </div>
+
+                            <div class="col-xs-6">
+                                @*<asp:Button id="searchButton" runat="server" CssClass="btn btn-default" Text="Search" />*@
+                                <button id="searchButton" class="btn btn-default">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
+        </nav>
+    </header>
+
+    <div id="masterBottomBar">
     </div>
+
+
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>*@
+
+
+    
+
+
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+        @*<footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>*@
     </div>
+
+
+    <div id="masterFooterBar">
+    </div>
+
+    <footer>
+        <div class="container">
+            <h2>Made It Baby</h2>
+            <p>Handmade Directory</p>
+            <ul>
+                <li>Login</li>
+                <li>Sign Up</li>
+            </ul>
+            <div id="copyright">&copy; Copyright Made It Baby @DateTime.Now.Year</div>
+        </div>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
